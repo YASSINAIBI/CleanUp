@@ -1,0 +1,255 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+  font-size: 12px;
+  overflow-x: hidden;
+  box-sizing: border-box;
+
+}
+
+.container{	width: 1100px;	margin: auto;}
+/* start header */
+
+header .topnav{
+	display: flex;
+	color: #7C7C7C;
+}
+
+header .topnav .p2{
+	margin-left: 52%;
+}
+header .topnav .p2 span{
+	color: #38ADA9;
+}
+hr{	margin:-1px;margin-bottom:5px;}
+
+header .navbar{	display: flex;}
+
+header .navbar .logo{display: -webkit-box;margin-top: 12px;text-decoration: none;}
+header .navbar .logo h2{color: #38ADA9; font-size: 24px;margin: 0px;margin-top: 7px;}
+
+header .navbar .logo img{margin-top: -4px;height: 48px;}
+
+header .navbar .menu {margin-left: 16%;margin-top: 0;}
+
+header .navbar .menu ul{list-style: none;}
+header .navbar .menu ul li {display: inline-block;margin-left: 20px;} 
+
+header .navbar .menu ul .active{color: #38ADA9;} 
+header .navbar .menu ul li a{text-decoration: none;color: #707070;}
+header .navbar .menu ul li.quote{
+	border:1px solid #38ADA9;
+	background-color: #38ADA9;
+	border-radius: 30px;
+	padding: 14px 25px;
+}
+
+header .navbar .menu ul li.quote a{color: #fff;font-weight: bold;}
+
+/* end header */
+
+/*start slder */
+
+.slider{
+	height: 600px;
+	background: url("../img/like_cleaning.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.layer {
+	background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(56, 173, 169, 0.7));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.text{
+	width: 37%;
+    text-align: start;
+    position: absolute;
+    top: 41%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.text h1{
+	font-size: 40px; 
+}
+
+.text p{
+	width: 81%;
+}
+
+.text .button {
+	margin-top: 10px;
+	padding: 14px 16px;
+	border-radius: 20px;
+	border: none;
+	font-size: 12px;
+	font-weight: bold;
+	color: #38ADA9;
+}
+/*start slider */
+
+/*start why shoose us*/
+.shoose .container h2{
+	font-size:30px;
+	font-weight: normal;
+	text-align: center;
+	color: #38ADA9;
+	margin: 57px
+}
+.shoose .container .why{
+	display: flex;
+	text-align: center;
+	margin-left: 4px; 
+}
+
+.shoose .container .why .us{
+	margin-right: 10px;
+	width: 40%;
+}
+
+.shoose .container .why .us i{
+	font-size: 60px;
+    color: #fff;
+    padding: 38px 44px;
+    background-color: #38ADA9;
+    border-radius: 100%;
+}
+
+.shoose .container .why .us h5{
+	font-size: 15px;
+    color: #38ADA9;
+    margin-top: 28px;
+    margin-left: 2px;
+    margin-bottom: 11px;
+}
+.shoose .container .why .us p{
+	color: #7C7C7C;
+}
+/*end why shoose us*/
+
+/*start services*/
+.services{
+	position: relative;
+	background-color: #FAFAFA;
+	height: 650px;
+	padding: 1px;
+	margin-top: 20px
+}
+.services .container h2{
+	font-size:30px;
+	font-weight: normal;
+	text-align: center;
+	color: #38ADA9;
+	margin: 57px
+}
+.services .container .Service{
+	display: flex;
+	text-align: center;
+	margin-left: 4px; 
+}
+
+.services .container .Service .type{
+	margin-right: 10px;
+	width: 40%;
+}
+
+.services .container .Service .type i{
+	font-size: 60px;
+    color: #fff;
+    padding: 38px 44px;
+    background-color: #38ADA9;
+    border-radius: 100%;
+}
+
+.services .container .Service .type h5{
+	font-size: 15px;
+    color: #38ADA9;
+    margin-top: 28px;
+    margin-left: 2px;
+    margin-bottom: 11px;
+    text-align: start;
+}
+.services .container .Service .type img{
+	width: 100%;
+	height: 190px;
+}
+.services .container .Service .type p{
+	color: #7C7C7C;
+	width: 90%;
+	text-align: start;
+	line-height: 1.6em;
+}
+.services  .buttondiv{
+	 position: absolute;
+    top: 88%;
+    right: 45%;
+}
+.services  .button {
+	margin-top: 10px;
+    padding: 14px 30px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #38ADA9;
+}
+
+/*end services*/
+/*start about*/
+.about{
+	display: flex;
+	margin-top: 90px;
+}
+.about .image img{
+	width: 48%;
+	height: 400px;
+}
+.about .text1 .star h3,
+.about .text1 .star h4{
+	color: #38ADA9;
+}
+/*end about*/
+
+
+.ligne{
+	background-color: #38ADA9;
+	height: 160px;
+	margin-top: 60px;
+}
+.ligne .text2{
+	width: 71%;
+	margin: auto;
+	display: flex;
+	padding-top: 4.5%;
+}
+
+.ligne .text2 span{ 
+	margin-right: 90px;
+	color: #fff;
+	font-size: 28px;
+}
+
+.ligne .button {
+	margin-top: 10px;
+	padding: 14px 16px;
+	border-radius: 20px;
+	border: none;
+	font-size: 12px;
+	font-weight: bold;
+	color: #38ADA9;
+}
+
+
