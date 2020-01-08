@@ -11,32 +11,37 @@ body {
   overflow-x: hidden;
   box-sizing: border-box;
 
+
 }
 
-.container{	width: 1100px;	margin: auto;}
+.container{	width: 80%;	margin: auto;}
 /* start header */
 
+
 header .topnav{
-	display: flex;
 	color: #7C7C7C;
 }
 
 header .topnav .p2{
-	margin-left: 52%;
+	display: flex;
+	margin-top: -30px;
+	justify-content: flex-end;
 }
 header .topnav .p2 span{
 	color: #38ADA9;
 }
 hr{	margin:-1px;margin-bottom:5px;}
 
-header .navbar{	display: flex;}
+header .navbar{display: flex;margin-bottom: -20px;z-index: 4;}
 
- .logo{display: -webkit-box;margin-top: 12px;text-decoration: none;}
+ .logo{display: flex;margin-top: 12px;text-decoration: none;}
  .logo h2{color: #38ADA9; font-size: 24px;margin: 0px;margin-top: 7px;}
 
  .logo img{margin-top: -4px;height: 48px;}
 
-header .navbar .menu {margin-left: 16%;margin-top: 0;}
+                    
+                    
+header .navbar .menu {margin-top: 0;display: flex;flex:1;justify-content: flex-end;}
 
 header .navbar .menu ul{list-style: none;}
 header .navbar .menu ul li {display: inline-block;margin-left: 20px;} 
@@ -52,6 +57,9 @@ header .navbar .menu ul li.quote{
 
 header .navbar .menu ul li.quote a{color: #fff;font-weight: bold;}
 
+
+.navbar .toggle{display: none;}
+.navbar .toggle img{width: 48px;height: 39px;}
 /* end header */
 
 /*start slder */
@@ -106,23 +114,31 @@ header .navbar .menu ul li.quote a{color: #fff;font-weight: bold;}
 	font-weight: 500;
 	text-align: center;
 	color: #38ADA9;
-	margin: 57px
+	margin: 57px 0;
 }
 .shoose .container .why{
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	text-align: center;
 	margin-left: 4px; 
 }
 
-.shoose .container .why .us{
-	margin-right: 10px;
-	width: 40%;
+.shoose .container .why .us{width: 32%;}
+.shoose .container .why .us .ico{
+	background-color: #38ADA9;
+	width: 80px;
 }
-
-.shoose .container .why .us i{
-	font-size: 60px;
-    color: #fff;
+.shoose .container .why .us img{
+	width: 80px;
+	background-color: #fff;
     padding: 38px 44px;
+
+}
+.shoose .container .why .us i{
+	font-size: 58px;
+    color: #fff;
+    padding: 42px 48px;
     background-color: #38ADA9;
     border-radius: 100%;
 }
@@ -148,7 +164,7 @@ header .navbar .menu ul li.quote a{color: #fff;font-weight: bold;}
 	margin-top: 20px
 }
 .services .container h2{
-	font-size:26px;
+	font-size:25px;
 	font-weight: 500;
 	text-align: center;
 	color: #38ADA9;
@@ -157,12 +173,13 @@ header .navbar .menu ul li.quote a{color: #fff;font-weight: bold;}
 .services .container .Service{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	padding-bottom: 90px; 
 }
 
 .services .container .Service .type{
 	margin-right: 10px;
-	width: 24%;
+	width: 250px;
 }
 
 .services .container .Service .type i{
@@ -190,6 +207,8 @@ header .navbar .menu ul li.quote a{color: #fff;font-weight: bold;}
 	width: 90%;
 	text-align: start;
 	line-height: 1.6em;
+	
+
 }
 .services  .buttondiv{
 	 position: absolute;
@@ -208,27 +227,33 @@ header .navbar .menu ul li.quote a{color: #fff;font-weight: bold;}
     background-color: #38ADA9;
 }
 
+
 /*end services*/
 /*start about*/
 .about{
 	display: flex;
-    width: 70%;
+	flex-wrap: wrap;
+	justify-content: center;
+    width: 90%;
     margin: auto;
     padding-top: 100px;
     position: relative;
     color: #7C7C7C;
+
+    
+}
+.about .image{
+	width: 45%;
+	margin-right: 30px;
 }
 .about .image img{
-	height: 400px;
+	height: 560px;
+	margin-bottom: 30px;
 
 }
 .about .text1{
-    position: absolute;
-    top: 84px;
-    left: 345px;
-}
-.about .text1 .star {
-	display: flex;
+	width: 50%;
+
 }
 .about .text1 .star i{
 	font-size: 39px;
@@ -240,9 +265,12 @@ header .navbar .menu ul li.quote a{color: #fff;font-weight: bold;}
 .about .text1 h2,
 .about .text1 .star h3{
 	color: #38ADA9;
+	text-align: start;
+	margin-bottom: 4px;
 }
 /*end about*/
-/*start ligne*/
+
+/*start ligne */
 
 
 .ligne{
@@ -254,6 +282,7 @@ header .navbar .menu ul li.quote a{color: #fff;font-weight: bold;}
 	width: 69%;
 	margin: auto;
 	display: flex;
+	
 	padding-top: 4.5%;
 }
 
@@ -276,28 +305,39 @@ header .navbar .menu ul li.quote a{color: #fff;font-weight: bold;}
 
 /*end ligne*/
 /*start team*/
+.team{
+	width: 105%;
+    margin: auto;
+}
 .team .club {
 	display: flex;
-	width: 67%;
-	margin: auto;
+    flex-wrap: wrap; 
+    justify-content: center;
+    /* align-items: center; */
+    margin: auto;
+    margin-bottom: 73px;
 }
-.team .club .persone{margin-right: 80px;}
+.team .club .persone{margin-right: 50px;}
 .team .club .persone h5,
 .team .club .persone p{text-align: center;margin-right: 0px}
 .team .club .persone p{font-size: 11px;color: #7C7C7C;}
 .team .club .persone h5{color: #38ADA9;margin-bottom: -6px; font-size: 15px;}
 .team .container h2,
-.Testimonials .container h2{
+.Testimonials .container h2,
+.projects h2{
 	font-size:26px;
 	font-weight: 500;
 	text-align: center;
 	color: #38ADA9;
 	margin-top: 65px
 }
+.team .container h2{
+	margin-left: -6%;
+}
 .team .club .persone img{
-	width: 190px;
-	height: 190px;
-	border-radius: 50%;
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
 	
 }
 /*end team*/
@@ -334,56 +374,86 @@ header .navbar .menu ul li.quote a{color: #fff;font-weight: bold;}
 }
 /*end testimonials*/
 
-/*start blog*/
-.blog1{
-	width: 70%;
-	margin: auto;
+/*start project*/
+	.projects .project {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	    align-items: center;
+		margin: 80px 0;
+	}
+	.projects .project .imgs{position: relative;}
+
+	.projects .project .imgs img{
+		width: 338px;
+		background-color: #278D89;
+
+	}
 	
-}
-.blog1 h2{font-weight:520}
-.blog1 .p1{font-size: 10px;font-weight: 600;color: #7C7C7C;}
-.blog1 .p2{font-size: 17px;color:#000;}
-.blog1 span{font-weight: bold;color: #000}
-.blog1 img{width: 100%;margin: auto;}
-.blog .blg {
+	.projects .project .hover{
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 98%;
+	    background-color: #278D89;
+	    opacity: 0;
+	}
+	.projects .project .hover:hover{
+	    opacity: 0.8;
+	}
+	.projects .project span{
+		position: absolute;
+	    top: 109px;
+	    left: 130px;
+	    color: #fff;
+
+	}
+	/*end project*/
+/*start blog*/
+
+ .blg {
 	display: flex;
-	width: 90%;
-	margin: auto;
-}
-.blog .blg .part{margin-right: 80px;position: relative;}
-.blog .blg .part h5,
-.blog .blg .part p{text-align: start;margin-right: 0px}
-.blog .blg .part p{font-size: 11px;color: #7C7C7C;}
-.blog .blg .part h5{color: #38ADA9;margin-bottom: -6px; font-size: 15px;}
-.blog .container h2{
+    flex-wrap: wrap; 
+    justify-content: center; 
+    width: 90%;
+    margin: auto;
+  }
+ .blg .part{margin-right: 20px;position: relative;width: 30%;margin-bottom: 60px;}
+ .blg .part h5,
+ .blg .part p{text-align: start;margin-right: 0px}
+ .blg .part p{font-size: 11px;color: #7C7C7C;}
+ .blg .part h5{color: #38ADA9;margin-bottom: -6px; font-size: 15px;}
+ .container h2{
 	font-size:26px;
 	font-weight: 500;
 	text-align: center;
 	color: #38ADA9;
+	margin-bottom: 43px;
 	
 }
-.blog .blg .part img{width: 267px;height: 225px;border: 1px solid #7c7c7c14;}
-.blog .blg .part .oss {
+ .blg .part img{width: 96%;height: 230px;border: 1px solid #7c7c7c14;}
+ .blg .part .oss {
 	display: flex;
 	position: absolute;
 	top: 100%;
 	left: 0;
 }
-.blog .blg .part .oss img{
+ .blg .part .oss img{
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
 }
-.blog .blg .part .oss p{margin-left: 8px;}
-.blog .blg .part .oss span{color: #000;}
-/*end blog*/
+ .blg .part .oss p{margin-left: 8px;}
+ .blg .part .oss span{color: #000;}
+/* end blog */
 /*start footer*/
 	footer{
 		background-color: #FAFAFA;
 		margin-top: 80px;
 		padding: 40px 0;
 	}
-	footer .ftr{display: flex;}
+	footer .ftr{display: flex;justify-content: center; }
 	footer .ftr .footer{
 		width: 16%;
     	margin-right: 21px;
@@ -399,4 +469,214 @@ header .navbar .menu ul li.quote a{color: #fff;font-weight: bold;}
 	footer .ftr .footer a{text-decoration: none;} 
 /*end footer*/
 
+
+/* media */
+@media (max-width: 1466px){
+	.services .buttondiv {top: 90%;}
+}
+@media (max-width: 1305px){
+	.blog1 .p2{font-size: 22px !important;}
+}
+@media (max-width: 1200px){
+	.about{display: block;}
+	.team .container h2{margin-left: -12%;}
+	.blg .part{width: 44%;}
+	.text h1 {font-size: 26px;}
+	.text p {width: 100%;font-size: 16px;}
+	.text .button {padding: 18px 12px;font-size: 15px;}
+	.about .text1 {width: 80%; margin: auto;}
+	.blog1 .p2{font-size: 20px !important;}
+	.navbar .toggle{
+		display: flex;
+		z-index: 5;
+	    margin-top: 14px;
+	    /* float: right; */
+	    flex: 1;
+	    justify-content: flex-end;
+	}
+	.navbar .toggle img {width: 44px;height: 34px;}
+	.navbar.active {width: 100%}
+	.navbar.active .menu{width: 100%;display: block;position: absolute;top: 57px;right: 63px;z-index: 1;}
+    .navbar.active .toggle {background: #223047;color: white;height: 0;}
+
+	.navbar .link:hover,
+            .navbar .link:active {
+                color: #223047;
+                background: white;
+                border: 1px solid #06B995;
+            }
+	.navbar .link{
+                display: block;
+                text-align: center;
+                padding: 1em;
+                text-decoration: none;
+                background: #fff;
+                color: #38ADA9;
+                margin-left: 3px;
+                z-index: 2;
+            }
+    .navbar .menu .i{border-top: 1px solid #38ADA9;}
+    header .navbar .menu ul {
+    list-style: none;
+    margin-right: -57px;
+    margin-top: 50px;}
+    header .navbar .menu ul li {display: block;margin-right: -11px;}
+    header .navbar .menu ul li.quote {
+    
+     border-radius: 0; 
+    padding: 14px 25px;
+    text-align: center;
+    
+}
+
+	header .navbar .menu{display: none;}
+
+
+	
+}
+@media (min-width: 501px) and (max-width: 767px){
+	.blg .part{width: 80%;}
+	.shoose .container .why .us {width: 49%;}
+	footer .ftr{flex-direction: column;}
+	footer .ftr .footer {/* width: 16%; */width: 100%;margin: auto;text-align: center;}
+	footer .ftr .footer .logo{margin-left: 22%;}
+	footer .ftr .footer .logo h2{ margin-bottom: 0;}
+		.services .buttondiv {top: 94%;}
+		.text h1 {font-size: 20px;}
+		.text p {width: 100%;font-size: 14px;}
+		.text .button {padding: 16px 10px;font-size: 13px;}
+		.about .text1 {width: 80%; margin: auto;}
+		.about .image {width: 45%;margin-right: 30px;margin: auto;}
+		.about .image img {height: 374px;/* margin-bottom: 30px; */}
+		header .topnav .p2{display: none;}
+		header .topnav .p1{text-align: center;}
+		.navbar .toggle{
+		display: flex;
+	    margin-top: 14px;
+	    /* float: right; */
+	    flex: 1;
+	    justify-content: flex-end;
+	    z-index: 5;
+	}
+     .navbar .toggle img {width: 44px;height: 34px;}
+	.navbar.active {width: 100%}
+	.navbar.active .menu{width: 100%;display: block;position: absolute;top: 57px;right: 63px;z-index: 1;}
+    .navbar.active .toggle {background: #223047;color: white;height: 0;}
+
+	.navbar .link:hover,
+            .navbar .link:active {
+                color: #223047;
+                background: white;
+                border: 1px solid #06B995;
+            }
+	.navbar .link{
+                display: block;
+                text-align: center;
+                padding: 1em;
+                text-decoration: none;
+                background: #fff;
+                color: #38ADA9;
+                margin-left: 3px;
+                z-index: 2;
+            }
+    .navbar .menu .i{border-top: 1px solid #38ADA9;}
+    header .navbar .menu ul {
+    list-style: none;
+    margin-right: -57px;
+    margin-top: 50px;}
+    header .navbar .menu ul li {display: block;margin-right: -11px;}
+    header .navbar .menu ul li.quote {
+    
+     border-radius: 0; 
+    padding: 14px 25px;
+    text-align: center;
+    
+}
+	header .navbar .menu{display: none;}
+
+
+.blog1 .p2{font-size: 17px !important;}
+
+
+}
+
+@media  (max-width: 500px){
+	.blg .part{width: 100%;}
+	.shoose .container .why .us {width: 79%;}
+	.services .buttondiv {top: 95%;}
+	.text h1 {font-size: 16px;}
+	.text p {width: 100%;font-size: 12px;}
+	.text .button {padding: 12px 7px;font-size: 11px;}
+	header .navbar .menu{display: none;}
+	.ligne {height: 100px;margin-top: 10px;}
+	.ligne .text2 span {margin-right: 10px;	font-size: 14px;}
+	.ligne .button {padding: 12px 20px;font-size: 10px;}
+	.about .text1{width: 100%;margin-bottom: 20px}
+	.about .image img {height: 374px;/* margin-bottom: 30px; */}
+	.about .text1 {width: 80%; margin: auto;}
+	footer .ftr{flex-direction: column;}
+	footer .ftr .footer {/* width: 16%; */width: 100%;margin: auto;text-align: center;}
+	footer .ftr .footer .logo{margin-left: 11%;}
+	footer .ftr .footer .logo h2{ margin-bottom: 0;}
+	header .topnav .p2{display: none;}
+	header .topnav .p1{text-align: center;}
+	.navbar .toggle{
+		display: flex;
+	    margin-top: 14px;
+	    /* float: right; */
+	    z-index: 5;
+	    flex: 1;
+	    justify-content: flex-end;
+	}
+	.navbar .toggle img {width: 44px;height: 34px;}
+	.navbar.active {width: 100%}
+	.navbar.active .menu{ width: 100%;display: block;position: absolute;top: 57px;right: 63px;z-index: 1;}
+    .navbar.active .toggle {background: #223047;color: white;height: 0;}
+
+	.navbar .link:hover,
+            .navbar .link:active {
+                color: #223047;
+                background: white;
+                border: 1px solid #06B995;
+            }
+	.navbar .link{
+                display: block;
+                text-align: center;
+                padding: 1em;
+                text-decoration: none;
+                background: #fff;
+                color: #38ADA9;
+                margin-left: 3px;
+                z-index: 2;
+            }
+    .navbar .menu .i{border-top: 1px solid #38ADA9;}
+    header .navbar .menu ul {
+    list-style: none;
+    margin-right: -57px;
+    margin-top: 50px;}
+    header .navbar .menu ul li {display: block;margin-right: -11px;}
+    header .navbar .menu ul li.quote {
+    
+     border-radius: 0; 
+    padding: 14px 25px;
+    text-align: center;
+    
+}
+
+    .container h2 {font-size: 23px;}
+
+	.blog1 .p2{font-size: 14px !important;}
+
+}
+
+/* media */
+
+/* page blog */
+.blog1 h2{font-weight:520;text-align: start;margin-bottom: 0}
+.blog1 .p1{font-size: 12px;font-weight: 600;color: #7C7C7C;}
+.blog1 .p2{font-size: 24px;color:#000;}
+.blog1 span{font-weight: bold;color: #000}
+.blog1 img{width: 100%;margin: auto;}
+
+/* page blog */
 

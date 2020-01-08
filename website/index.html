@@ -7,7 +7,7 @@
 	<title>Queen of Clean</title>
 
 	<link href="css/style.css" rel="stylesheet">    
-	<link href="css/all.min.css" rel="stylesheet">    
+	<link href="css/all.css" rel="stylesheet">    
 
 
 	<!-- Google Fonts -->
@@ -33,23 +33,21 @@
 					</a>
 					<div class="menu">
 						<ul>
-							<li><a href="" class="active">Home</a></li>
-							<li><a href="">About us</a></li>
-							<li><a href="">Services</a></li>
-							<li><a href="">Our Works</a></li>
-							<li><a href="">Pricing</a></li>
-							<li><a href="">Blog</a></li>
-							<li><a href="">Contact</a></li>
+							<li><a href="" class="active link i">Home</a></li>
+							<li><a href="" class="link">About us</a></li>
+							<li><a href="" class="link">Services</a></li>
+							<li><a href="" class="link">Our Works</a></li>
+							<li><a href="" class="link">Pricing</a></li>
+							<li><a href="" class="link">Blog</a></li>
+							<li><a href="" class="link">Contact</a></li>
 							<li class="quote"><a href="">Request A Quote</a></li>
-							
 						</ul>
 					</div>
+
+                	<a href="#" class="toggle" id="navHamburger"><img src="img/bars.png"></a>
 				</div>
 			</div>
 		</header>
-
-
-
 	<!-- end header -->
 
 	<!-- start slider -->
@@ -81,7 +79,7 @@
 						<p>Queen of Clean Service, Inc. is licensed, bonded and insured. We are a family operated business and we offer competitive rates and several affordable, flexible and customized plans that meet your needs.</p>
 					</div>
 					<div class="us">
-						<i class="fas fa-trophy"></i>
+						<i class="fas fa-user"></i>
 						<h5>Experienced</h5>
 						<p>Each maid is fully trained to perform the residential and commercial cleaning services we provide.</p>
 					</div>
@@ -157,7 +155,7 @@
 					</div>
 					
 					<div class="star">
-						<i class="fas fa-cog"></i>
+						<i class="far fa-address-card"></i>
 						<div>
 							<h3>Highly-Trained Technicians</h3>
 							<p>
@@ -165,9 +163,7 @@
 							</p>
 						</div>
 					</div>
-					
 					<div class="buttondiv"><a href="About.html"><input type="button" name="" value="More info" class="button"></a></div>
-
 				</div>
 			</div>
 		</div>
@@ -225,33 +221,29 @@
 
 
 	<!-- start projects -->
-
-
 		<div class="projects">
 				<h2>Our Projects</h2>
 				<div class="project">
 					<div class="imgs">
-						<img src="img/.jpg">
-						<p></p>
+						<img src="img/p4.jpg">
+						<div class="hover"><span>House Cleaning</span></div>
+					</div>
+					<div class="imgs">
+						<img src="img/p2.jpg">
+						<div class="hover"><span>Office Cleaning</span></div>
 					</div>	
 					<div class="imgs">
-						<img src="img/.jpg">
-						<p></p>
+						<img src="img/p3.jpg">
+						<div class="hover"><span>garden Cleaning</span></div>
 					</div>	
 					<div class="imgs">
-						<img src="img/.jpg">
-						<p></p>
-					</div>	
-					<div class="imgs">
-						<img src="img/.jpg">
-						<p></p>
+						<img src="img/p1.jpg">
+						<div class="hover"><span>Commercial Cleaning</span></div>
 					</div>	
 				</div>
 		</div>
 	<!-- end projects -->
 	<!-- start blog -->
-
-	<div class="blog">
 			<div class="container">
 				<h2>Latest Blog</h2>
 				<div class="blg">
@@ -287,7 +279,6 @@
 					</div>	
 				</div>
 			</div>
-	</div>
 	<!-- end blog -->
 	<!-- start footer -->
 		<footer>
@@ -295,7 +286,7 @@
 				<div class="ftr">
 					<div class="footer f1">
 						<a href="" class="logo">
-							<img src="img/logo.png">
+							<div class="ico"><img src="img/logo2.png"></div>
 							<h2>Queen of Clean</h2>
 						</a>
 						<p>
@@ -331,10 +322,13 @@
 		</footer>
 
 	<!-- end footer -->
-
-
-
-	<script type="text/javascript" src="all.min.js"></script>
+	 	<Script>
+                var navHamburger = document.querySelector('#navHamburger');
+                navHamburger.addEventListener( 'click', (e) => {
+                    navHamburger.parentElement.classList.toggle('active');
+                });
+        </Script>
+    <script defer src="assets/js/all.js"></script> <!--load all styles -->
 </body>
 
 </html>
