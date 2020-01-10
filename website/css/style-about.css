@@ -1,0 +1,284 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin-bottom: 1000px;
+}
+/*start header*/
+.header {
+    background: url('../img/back.jpg') no-repeat top center;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+}
+.header .header-element-style h1{
+position: relative;
+font-size: 49px;
+color: #38ADA9;
+top: 161px;
+left: 180px;
+width: 20%;
+}
+.header .header-element-style p{
+color: #29166F;
+position: relative;
+top: 118px;
+left: 241px;
+width: 15%;
+font-size: 33px;
+}
+@media (max-width: 600px) { /*small screen*/
+    .header .header-element-style h1{
+        top: 16px;
+        left: 40px;
+        width: 92%;
+        text-align: center;
+        }
+    .border{
+        top: 317px !important;
+        left: 136px !important;
+
+    }
+    .header .header-element-style p{
+        top: 273px;
+        left: 198px;
+        width: 59%;
+        }
+}
+
+/*end header*/
+
+/*start about us*/
+
+.container-about-us {
+    padding: 4% 4%;
+    /*background-color: #FAFAFA;*/
+    width: 68%;
+    position: relative;
+    left: 16%;
+    top: 60px;
+}
+.container-about-us .about-us .about-text h1{
+    text-align: center;
+    color: #38ADA9;;
+}
+.container-about-us .about-us .about-text p{
+    color: #948699;
+}
+/*end about us*/
+
+/*start why us*/
+.why-us .container .text h1{
+    position: relative;
+    top: -15px;
+    color: #38ADA9;
+}
+.why-us{
+    position: relative;
+    right: 186px;
+    width: 157%;
+}
+.tree-line{
+    float: left;
+    width: 30.3333%;
+    color: #948699;
+    display: inline-block;
+    margin-left: 3%;
+}
+span{
+    font-weight: bold;
+    position: relative;
+    right: 21px;
+    font-size: 20px;
+    color: black;
+    margin-right: -17px;
+}
+@media (max-width: 992px) { 
+    .tree-line{
+        width: 100%;
+    }
+    .why-us .container .text h1{
+        left: 25%;
+        width:39%;
+        text-align: center;
+    }
+    .container{
+            padding: 0% 14% 14% 4% !important;
+            width: 84% !important;
+            position: relative !important;
+            left: 41% !important;
+            top: 130px !important;
+        }
+    }
+@media (min-width: 700px) and (max-width: 1000px){ 
+    .container{
+        left: 13% !important;
+        margin: auto;
+    }
+}
+/*end why us*/
+
+/*Start Mission && vision*/
+    .Mi-vi .container-Mi-Vi {
+        width:  100%;
+        position: relative;
+        top: 250px;
+    }
+
+    .Mi-vi .container-Mi-Vi .content-Mi-Vi .Mission{
+        float: left;
+        width: 45%;
+    }
+
+    .Mi-vi .container-Mi-Vi .content-Mi-Vi .Vision{
+        float: left;
+        width: 45%;
+    }
+    .Mi-vi .container-Mi-Vi p{
+        color: #948699;
+    }
+    .Mi-vi .container-Mi-Vi h1{
+        color: #38ADA9;;
+    }
+    .Mi-vi .container-Mi-Vi .Mission p{
+        position: relative;
+    }
+    .Mi-vi .container-Mi-Vi .Vision p{
+        position: relative;
+        left: 26%;
+    }
+    .Mi-vi .container-Mi-Vi .Vision h1{
+        position: relative;
+        left: 24%;
+    }
+
+    @media (max-width: 992px) { 
+        .Mi-vi .container-Mi-Vi .content-Mi-Vi .Mission{
+            width: 100%;
+            position: relative;
+            left: 25%;
+        }
+        .Mi-vi .container-Mi-Vi .content-Mi-Vi .Vision{
+            width: 100%;
+            position: relative;
+            top: 30px;
+        }
+        .Mi-vi .container-Mi-Vi{
+            right: 15%;
+        }
+        .Mi-vi .container-Mi-Vi h1{
+            text-align: center;
+        }
+    }
+/*End Mission && vision*/
+
+/*Start Last paragraphes Mission && vision*/
+.last-p{
+    position: absolute;
+    top : 150%;
+}
+.last-p .second-p{
+    position: absolute;
+    top: 340%;
+    left: 25%;
+}
+.last-p .first-p{
+    padding-right: 40px;
+}
+.last-p{
+    color:#948699; ;
+}
+
+@media (max-width: 992px) { 
+    .last-p{
+        top : 124%;
+        left: 16%;
+    }
+    .last-p .second-p{
+        top : 290%;
+        left: 0%;
+    }
+   
+}
+@media (max-width: 992px){
+    .all{
+        height: 2700px !important;
+    }
+}
+/*End Last paragraphes Mission && vision*/
+
+/*strat resoulution*/
+@media (max-width: 767px){ /*mobile and tablet*/
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px){ /*small screen*/
+    .container{
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){ /*medium screen*/
+    .container{
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px){ /*large screen*/
+    .container{
+        width: 1170px;
+    }
+}
+/*end resoulution*/
+
+/* Start my framwork */
+.container{
+    padding: 0% 14% 14% 4%;
+    width: 84%;
+    position: relative;
+    left: 11%;
+    top: 130px;
+}
+.text-center{
+    text-align: center;
+}
+.clearfix{
+    clear: both;
+}
+.float-l{
+    float: left;
+}
+.responsive-paragraphe{
+    line-height: 1.8;
+}
+.responsive-image{
+    width: 100%;
+}
+.border{
+    font-size: 32px;
+    color: #29166F;
+    border: 2px solid #29166F;
+    width: 250px;
+    position: relative;
+    top: 161px;
+    padding: 20px;
+    left: 178px;
+}
+
+/* end my framwork */
+.container .about-us .about-text p{
+    float: left;
+    width: 50%;
+}
+.all{
+    background-color: #c7bdbd59;
+    position: absolute;
+    height: 1521px;
+    right: 8%;
+    left: 8%;
+    border: 0px solid #c7bdbd59;
+    border-radius: 20%;
+    top: 100%;
+}
