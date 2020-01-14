@@ -20,17 +20,17 @@ body{
 }
 .header .img2{
     float: left;
-    width: 33.333%;
+    width: 31.333%;
     position: relative;
 }
 .header .img1{
     float: left;
-    width: 34.333%;
+    width: 39.333%;
     position: relative;
 }
 .header .img3{
     float: left;
-    width: 32.333%;
+    width: 29.333%;
     position: relative;
 }
 .header{
@@ -217,25 +217,25 @@ bottom: 164px;
     }
     .our-work-gallery-2 .container .content-G1 h1 {
         position: relative;
-        left: 36%;
+        left: 34%;
         top: -358px;
         text-align: center;
     }
     .our-work-gallery-2 .container .content-G2 h1 {
         position: relative;
-        left: 36%;
+        left: 34%;
         top: -345px;
         text-align: center;
     }
     .our-work-gallery-2 .container .content-G3 h1 {
         position: relative;
-        left: 36%;
+        left: 30%;
         top: -350px;
         text-align: center;
     }
     .our-work-gallery-2 .container .content-G4 h1 {
         position: relative;
-        left: 23%;
+        left: 18%;
         width: auto;
         top: -358px;
         text-align: center;
@@ -266,7 +266,7 @@ bottom: 164px;
     }
     .our-work-gallery-2 .container img {
         margin-bottom: 160px;
-        left: 22%;
+        left: 16%;
     }
     .our-work-gallery-2 {
         position: relative;
@@ -319,3 +319,336 @@ bottom: 164px;
     float: left;
 }
 /*end-my-framwork*/
+
+
+
+
+
+
+
+
+.container1{	width: 70%;	margin: auto;}
+.container-lg{	width: 80%;	margin: auto;}
+/* start header */
+header {
+	margin-bottom: 27px;
+}
+
+header .topnav{
+	color: #7C7C7C;
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+}
+
+header .topnav .p2{
+	display: flex;
+	margin-top: -30px;
+	justify-content: flex-end;
+}
+header .topnav .p2 span{
+	color: #38ADA9;
+}
+hr{	margin:-1px;margin-bottom:5px;}
+
+header .navbar{display: flex;margin-bottom: -20px;z-index: 4;}
+
+ .logo{display: flex;margin-top: 12px;text-decoration: none;}
+ .logo h2{color: #38ADA9;font-size: 24px;margin: 0px;margin-top: 7px;font-family: 'Poppins', sans-serif;}
+
+ .logo img{margin-top: -4px;height: 48px;margin-left: -4px;}
+
+                    
+                    
+header .navbar .menu {margin-top: 0;display: flex;flex:1;justify-content: flex-end;}
+
+header .navbar .menu ul{list-style: none;font-family: 'Poppins', sans-serif;font-size: 12px;}
+header .navbar .menu ul li {display: inline-block;margin-left: 20px;} 
+
+header .navbar .menu ul .active{color: #38ADA9;} 
+header .navbar .menu ul li a{text-decoration: none;color: #707070;}
+header .navbar .menu ul li.quote{
+	border:1px solid #38ADA9;
+	background-color: #38ADA9;
+	border-radius: 30px;
+	padding: 14px 25px;
+}
+
+header .navbar .menu ul li.quote a{color: #fff;font-weight: bold;}
+
+
+.navbar .toggle{display: none;}
+.navbar .toggle img{width: 48px;height: 39px;}
+/* end header */
+
+
+
+
+
+/* media */
+@media (max-width: 1466px){
+	.services .buttondiv {top: 90%;}
+	
+}
+@media (max-width: 1334px){
+	.blog1 .p2{font-size: 22px !important;}
+	header .navbar .menu ul li {
+    margin-left: 8px;
+}
+}
+@media (max-width: 1200px){
+	.about{display: block;}
+	.team .container h2{margin-left: -12%;}
+	.blg .part{width: 44%;}
+	.text h1 {font-size: 26px;}
+	.text p {width: 100%;font-size: 16px;}
+	.text .button {padding: 18px 12px;font-size: 15px;}
+	.about .text1 {width: 80%; margin: auto;}
+	.blog1 .p2{font-size: 20px !important;}
+	.navbar .toggle{
+		transition: all .5s ease;
+		display: flex;
+		z-index: 5;
+	    margin-top: 14px;
+	    /* float: right; */
+	    flex: 1;
+	    justify-content: flex-end;
+	}
+	.navbar .toggle img {width: 44px;height: 34px;}
+	.navbar.active {width: 100%}
+	.navbar.active .menu{width: 100%;display: block;position: absolute;top: 57px;right: 63px;z-index: 1;}
+    .navbar.active .toggle {background: #223047;color: white;height: 0;}
+
+	.navbar .link:hover,
+    .navbar .link:active {
+        color: #223047;
+        background: white;
+        border: 1px solid #06B995;
+    }
+	.navbar .link{
+                display: block;
+                text-align: center;
+                padding: 1em;
+                text-decoration: none;
+                background: #fff;
+                color: #38ADA9;
+                margin-left: 3px;
+                z-index: 2;
+            }
+    .navbar .menu .i{border-top: 1px solid #38ADA9;}
+    header .navbar .menu ul {
+    list-style: none;
+    margin-right: -57px;
+    margin-top: 50px;}
+    header .navbar .menu ul li {display: block;margin-right: -11px;}
+    header .navbar .menu ul li.quote {    
+     border-radius: 0; 
+    padding: 14px 25px;
+    text-align: center;}
+
+	header .navbar .menu{display: none;}
+
+
+	
+}
+@media (min-width: 501px) and (max-width: 767px){
+	.blg .part{width: 80%;}
+	.shoose .container .why .us {width: 49%;}
+	footer .ftr{flex-direction: column;}
+	footer .ftr .footer {/* width: 16%; */width: 100%;margin: auto;text-align: center;}
+	footer .ftr .footer .logo{margin-left: 22%;}
+	footer .ftr .footer .logo h2{ margin-bottom: 0;}
+		.services .buttondiv {top: 94%;}
+		.text h1 {font-size: 20px;}
+		.text p {width: 100%;font-size: 14px;}
+		.text .button {padding: 16px 10px;font-size: 13px;}
+		.about .text1 {width: 80%; margin: auto;}
+		.about .image {width: 45%;margin-right: 30px;margin: auto;}
+		.about .image img {height: 374px;/* margin-bottom: 30px; */}
+		header .topnav .p2{display: none;}
+		header .topnav .p1{text-align: center;}
+		.navbar .toggle{
+		display: flex;
+	    margin-top: 14px;
+	    /* float: right; */
+	    flex: 1;
+	    justify-content: flex-end;
+	    z-index: 5;
+	}
+     .navbar .toggle img {width: 44px;height: 34px;}
+	.navbar.active {width: 100%}
+	.navbar.active .menu{width: 100%;display: block;position: absolute;top: 57px;right: 63px;z-index: 1;}
+    .navbar.active .toggle {background: #223047;color: white;height: 0;}
+
+	.navbar .link:hover,
+            .navbar .link:active {
+                color: #223047;
+                background: white;
+                border: 1px solid #06B995;
+            }
+	.navbar .link{
+                display: block;
+                text-align: center;
+                padding: 1em;
+                text-decoration: none;
+                background: #fff;
+                color: #38ADA9;
+                margin-left: 3px;
+                z-index: 2;
+            }
+    .navbar .menu .i{border-top: 1px solid #38ADA9;}
+    header .navbar .menu ul {
+    list-style: none;
+    margin-right: -57px;
+    margin-top: 50px;}
+    header .navbar .menu ul li {display: block;margin-right: -11px;}
+    header .navbar .menu ul li.quote {
+    
+     border-radius: 0; 
+    padding: 14px 25px;
+    text-align: center;
+    
+}
+	header .navbar .menu{display: none;}
+
+
+.blog1 .p2{font-size: 17px !important;}
+
+
+}
+
+@media  (max-width: 500px){
+	.blg .part{width: 100%;}
+	.shoose .container .why .us {width: 79%;}
+	.services .buttondiv {top: 95%;}
+	.text h1 {font-size: 16px;}
+	.text p {width: 100%;font-size: 12px;}
+	.text .button {padding: 12px 7px;font-size: 11px;}
+	header .navbar .menu{display: none;}
+	.ligne {height: 100px;margin-top: 10px;}
+	.ligne .text2 span {margin-right: 10px;	font-size: 14px;}
+	.ligne .button {padding: 12px 20px;font-size: 10px;}
+	.about .text1{width: 100%;margin-bottom: 20px}
+	.about .image img {height: 374px;/* margin-bottom: 30px; */}
+	.about .text1 {width: 80%; margin: auto;}
+	footer .ftr{flex-direction: column;}
+	footer .ftr .footer {/* width: 16%; */width: 100%;margin: auto;text-align: center;width: 376px !important;}
+	footer .ftr .footer .logo{margin-left: 10%;}
+	footer .ftr .footer .logo h2{}
+	header .topnav .p2{display: none;}
+	header .topnav .p1{text-align: center;}
+	.navbar .toggle{
+		display: flex;
+	    margin-top: 14px;
+	    /* float: right; */
+	    z-index: 5;
+	    flex: 1;
+	    justify-content: flex-end;
+	}
+	.navbar .toggle img {width: 44px;height: 34px;}
+	.navbar.active {width: 100%}
+	.navbar.active .menu{ width: 100%;display: block;position: absolute;top: 57px;right: 63px;z-index: 1;}
+    .navbar.active .toggle {background: #223047;color: white;height: 0;}
+
+	.navbar .link:hover,
+            .navbar .link:active {
+                color: #223047;
+                background: white;
+                border: 1px solid #06B995;
+            }
+	.navbar .link{
+                display: block;
+                text-align: center;
+                padding: 1em;
+                text-decoration: none;
+                background: #fff;
+                color: #38ADA9;
+                margin-left: 3px;
+                z-index: 2;
+            }
+    .navbar .menu .i{border-top: 1px solid #38ADA9;}
+    header .navbar .menu ul {
+    list-style: none;
+    margin-right: -57px;
+    margin-top: 50px;}
+    header .navbar .menu ul li {display: block;margin-right: -11px;}
+    header .navbar .menu ul li.quote {
+    
+     border-radius: 0; 
+    padding: 14px 25px;
+    text-align: center;
+    
+}
+
+    .container h2 {font-size: 23px;}
+
+	.blog1 .p2{font-size: 14px !important;}
+	.team .club .persone {margin-right: 40px;}
+	.Testimonials .test .persone p {
+	    font-size: 11px;
+	    padding-top: 0;
+	}
+	.Testimonials .button {font-size: 9px;}
+	.projects h2 { margin-top: 0px;}
+	.projects .project { margin:  0;}
+	.blog1{padding: 0;}
+	.container{width: 73%;}
+	.services .container h2 {margin: 20px 0;}
+	.services .container .Service .type {width: 320px;margin: 0}
+	.blog1 .bh2{text-align: center; font-size: 15px;}
+	.blog1 p{font-size: 8px !important;}
+}
+
+
+/*start footer*/
+footer{
+    background-color: #FAFAFA;
+    margin-top: 1330px;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+footer .ftr{display: flex;justify-content: center; }
+footer .ftr .footer{
+    width: 16%;
+    margin-right: 22px;
+}
+footer .ftr .footer p{color: #3E3E3E;}
+footer .ftr  .f1{
+    width: 29%;
+    margin-right: 70px;
+    margin-left: 45px;
+}
+footer .ftr  .f1 .logo h2{
+    margin-bottom: 0;}
+footer .ftr  .f1 p{line-height: 2;margin-bottom: 21px;}
+footer .ftr  .f1 p span{color: #000;font-weight: 600}
+footer .ftr .footer a{text-decoration: none;} 
+footer .social{color:#38ADA9;font-size: 14px}
+footer .social i{ margin-right: 5px;}
+/*end footer*/
+
+
+
+@media  (max-width: 500px){
+    footer{
+        margin-top: 5500px;
+        width: 111%;
+        margin-left: -53px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+    }
+    footer .ftr .footer{
+        width: 16%;
+        margin-left: 37px;
+    }
+    .our-work-gallery-2{
+        position: relative;
+        left: -12% !important;
+    }
+}
+
+.our-work-gallery-2{
+    position: relative;
+    left: 10%;
+    width: 90%;
+}

@@ -6,8 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ours-works</title>
     <link rel="stylesheet" href="css/ours-works.css" >
+    <link href="css/all.css" rel="stylesheet">    
+
+
+	<!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
+
+    <!-- start header -->
+		
+		<header>
+			<div class="container1">
+				<div class="topnav">
+					<p class="p1">Welcome To our Cleaning Company</p>
+					<p class="p2">Phone: +1 342 422 9029 Email :  <span>  info@company.com</span></p>
+				</div>
+			</div>	
+				<hr>
+
+			<div class="container1">
+				<div class="navbar">
+					<a href="" class="logo">
+						<img src="img/logo.png">
+						<h2>Queen of Clean</h2>
+					</a>
+					<div class="menu">
+						<ul>
+							<li><a href="index.html" class="link">Home</a></li>
+							<li><a href="about-us.html" class="link">About us</a></li>
+							<li><a href="blog2.html" class="link">Services</a></li>
+							<li><a href="ours-works.html" class="active link i">Our Works</a></li>
+							<li><a href="pricing.html" class="link">Pricing</a></li>
+							<li><a href="blog.html" class="link">Blog</a></li>
+							<li><a href="contact.html" class="link">Contact</a></li>
+							<li class="quote"><a href="">Request A Quote</a></li>
+						</ul>
+					</div>
+
+                	<a href="#" class="toggle" id="navHamburger"><img src="img/bars.png"></a>
+				</div>
+			</div>
+		</header>
+	<!-- end header -->
+
     <!--start header-->
     <div class="header">
         <div class="header-element-style">
@@ -133,5 +175,64 @@
 </div>
 
 <!-- end our work gallery 2 -->
+
+
+<!-- start footer -->
+<footer>
+    <div class="container1">
+        <div class="ftr">
+            <div class="footer f1">
+                <a href="" class="logo">
+                    <div class="ico"><img src="img/logo2.png"></div>
+                    <h2>Queen of Clean</h2>
+                </a>
+                <p>
+                    Queen of Clean Service, Inc. has been proudly serving the Santa Barbara area for 30 years and provides a myriad of excellent detailed services.
+                </p>
+                <p>© Copyright 2018 <span>Queen of Clean</span> ,  All Right Reserved</p>
+            </div>
+            <div class="footer">
+                <h4>Quick View</h4>
+                <a href="index.html"><p>Home</p></a>
+                <a href="about.html"><p>About</p></a>
+                <a href="services.html"><p>Services</p></a>
+                <a href="ourwork.html"><p>Projects</p></a>
+                <a href="quote.html"><p>Quote</p></a>
+            </div>
+            <div class="footer">
+                <h4>Services</h4>
+                <p>Commercial Cleaning</p>
+                <p>House Cleaning</p>
+                <p>Office Cleaning</p>
+                <p>Glass Cleaning</p>
+                <p>Window Clening</p>
+            </div>
+            <div class="footer">
+                <h4>Contact Us</h4>
+                <p>Phone: +1 234 567 9332</p>
+                <p>Email: info@company.com</p>
+                <p>Fax: +1 342 422 5314</p>
+                <div class="social">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- end footer -->
+
+<Script>
+    var navHamburger = document.querySelector('#navHamburger');
+    navHamburger.addEventListener( 'click', (e) => {
+        navHamburger.parentElement.classList.toggle('active');
+    });
+</Script>
+<script defer src="assets/js/all.js"></script> <!--load all styles -->
+
 </body>
 </html>
